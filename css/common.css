@@ -1,0 +1,282 @@
+/* 字体图标 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?tomleg');
+  src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+    url('../fonts/icomoon.woff?tomleg') format('woff'),
+    url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+/* 公共的css样式 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hundred {
+  position: relative;
+  width: 100%;
+}
+.style_a_red {
+  color: #c81623;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+header,
+nav,
+footer,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+/* 快键导航 */
+.shortcut {
+  width: 100%;
+  height: 31px;
+  background-color: #f1f1f1;
+  line-height: 31px;
+  font-size: 12px;
+}
+.shortcut li {
+  float: left;
+  color: #666666;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 9px 15px 0;
+}
+.shortcut .fr ul li:hover {
+  color: #c81623;
+}
+
+.shortcut .fr .arrow-icon::after {
+  content: '\e91e';
+  margin-left: 6px;
+  font-family: 'icomoon';
+}
+/* 头部制作 */
+/* logo */
+.header {
+  position: relative;
+  height: 105px;
+}
+.header .logo {
+  position: absolute;
+  top: 25px;
+  width: 171px;
+  height: 61px;
+}
+.header .logo a {
+  display: block;
+  width: 171px;
+  height: 61px;
+  background: url(../images/logo/logo.png) no-repeat;
+  font-size: 0;
+}
+/* logo end */
+/* 搜索 +热词hotwrods*/
+.header .search {
+  position: absolute;
+  top: 25px;
+  left: 346px;
+  height: 36px;
+  width: 538px;
+  border: 2px solid #c81623;
+}
+
+.header .search .inputSearch {
+  width: 454px;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.header .search .inputBut {
+  position: absolute;
+  right: -1px;
+  top: -2px;
+  width: 80px;
+  height: 39px;
+  background-color: #e1251b;
+  float: right;
+  color: white;
+}
+.header .search .hotwrods {
+  margin-top: 5px;
+}
+
+.search a:first-child {
+  padding-left: 10px;
+  font-size: 12px;
+  color: #c81623;
+}
+.search a:nth-child(n + 2) {
+  padding-left: 18px;
+  font-size: 12px;
+  color: #999;
+}
+/* 搜索end */
+/* 购物车 showcar*/
+.showcar {
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  width: 140px;
+  height: 35px;
+  color: #666666;
+  background: #f7f7f7;
+  border: 1px solid #dfdfdf;
+  line-height: 35px;
+  text-align: center;
+}
+.showcar .sTrolley {
+  font-size: 12px;
+}
+.sTrolley i {
+  position: absolute;
+  top: -6px;
+  width: 16px;
+  height: 14px;
+  line-height: 14px;
+  color: white;
+  background-color: red;
+  font-style: normal;
+  border-radius: 7px 7px 7px 0px;
+}
+.showcar .sTrolley::before {
+  content: '\e93a';
+  font-family: 'icomoon';
+  margin-right: 5px;
+  color: red;
+}
+.showcar .sTrolley::after {
+  content: '\e920';
+  font-family: 'icomoon';
+  margin-left: 5px;
+}
+/* 购物车end */
+/* 全部商品分类的right*/
+.nav_category .navitems {
+  float: left;
+}
+.nav_category .navitems ul li {
+  display: inline;
+}
+.nav_category .navitems ul li a {
+  display: block;
+  color: #666666;
+  float: left;
+  width: 98px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.nav_category .navitems ul li a:hover {
+  color: #c81623;
+  text-decoration: none;
+}
+/* 底部 */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  background-color: #f5f5f5;
+  clear: both;
+}
+.safeguard {
+  height: 80px;
+  padding: 20px 0px 0px 10px;
+}
+.safeguard ul li {
+  width: 269px;
+  height: 80px;
+  margin-left: 20px;
+  float: left;
+}
+.safeguard-txt {
+  float: left;
+  color: #666666;
+  line-height: 22px;
+  padding-top: 20px;
+}
+.safeguard-txt p {
+  font-size: 12px;
+}
+.safeguard-txt h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.safeguard ul li h6 {
+  background: url(../upload/safeguardImg.png) no-repeat;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.safeguard_tieku {
+  clear: both;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.safeguard ul li {
+  padding-bottom: 20px;
+}
+.service .guide {
+  margin: 30px 0px 0px 0px;
+}
+.service ul li {
+  padding-left: 60px;
+  width: 120px;
+}
+.service ul li:last-of-type {
+  padding-bottom: 20px;
+}
+.service ul li p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 40px;
+}
+.service ul li a {
+  font-size: 12px;
+  color: #666666;
+}
+.guide ul:last-of-type {
+  text-align: center;
+}
+.guide img {
+  width: 80px;
+  height: 80px;
+}
+.aboutUs {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666666;
+}
+.aboutUs ul li {
+  display: inline;
+}
+.aboutUs ul li:nth-of-type(2n) {
+  height: 12px;
+  margin: 2px 2px;
+}
+.aboutUs .relation {
+  padding-top: 10px;
+  line-height: 20px;
+}
